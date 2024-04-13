@@ -1,0 +1,12 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Resources:
+  S3Bucket:
+    Type: AWS::S3::Bucket
+    Description: S3 Bucket for LP2 Mini Project
+    Properties:
+      BucketName: lp2miniproject
+  
+Outputs:
+  S3BucketName:
+    Description: Name of the S3 Bucket
+    Value: !Ref S3Bucket
